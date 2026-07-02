@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV letter HTML</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        header, footer {
+            text-align: center;
+        }
+        main {
+            margin-top: 20px;
+        }
+        #personal img {
+            border-radius: 50%;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        tbody {
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CV Letter</h1>
+    </header>
+    <hr>
+
+    <main>
+        <div id="personal">
+            <h2>Personal Information</h2>
+            <img src="./images.jpg" alt="Profile Picture" width="150"><br>
+            <p>Welcome to my CV letter! Here you can find my personal information, professional background, hobbies, and career experience.</p>
+            <a href="https://www.linkedin.com/">LinkedIn Profile</a><br>
+            <a href="https://github.com/UnknownUserKR/oz-ai-05/tree/main">내 Repository 바로가기</a>
+            <ul>
+                <li>Name: Minjae Kwon</li>
+                <li>Email: minjae.kwon@example.com</li>
+                <li>Phone: +82 10-1234-5678</li>
+                <li>Address: Seoul, South Korea</li>
+                <li>Gender: Male</li>
+                <li>Age: 200</li>
+            </ul>
+        </div>
+
+        <div id="professional">
+            <hr>
+            <h2>Professional Background</h2>
+            <ul>
+                <li>Education: Bachelor's Degree in Computer Science</li>
+                <li>Skills: HTML, CSS, JavaScript</li>
+                <li>Experience: 2 years as a Front-end Developer</li>
+            </ul>
+        </div>
+
+        <div id="hobby">
+            <hr>
+            <h2>Hobby & Preferences</h2>
+            <ol>
+                <li>Traveling</li>
+                <li>Gaming & Music</li>
+                <li>Reading & Writing</li>
+            </ol>
+        </div>
+
+        <div id="career">
+            <hr>
+            <h2>Career & Work Experience</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Company</th>
+                        <th>Position</th>
+                        <th>Duration</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ABC Tech</td>
+                        <td>Front-end Developer</td>
+                        <td>2024 - Present</td>
+                    </tr>
+                    <tr>
+                        <td>XYZ Solutions</td>
+                        <td>Web Developer Intern</td>
+                        <td>2021 - 2024</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="cover-letter">
+            <hr>
+            <h2>Send Cover Letter</h2>
+            <p>Thank you for your consideration.</p>
+            <form>
+                <label for="email">담당자 이메일:</label>
+                <input type="email" name="email" placeholder="email@example.com"><br>
+                <label for="company">회사 이름:</label>
+                <input type="company" name="company" placeholder="Company Name"><br>
+                <label for="message">메시지:</label>
+                <textarea name="message" placeholder="Your Message" rows="6" cols="45"></textarea><br>
+                <button type="submit">이력서 전송하기</button>
+            </form>
+        </div>
+    </main>
+    <hr>
+
+    <footer>
+        <p>&copy; 2026 Minjae Kwon</p>
+    </footer>
+</body>
+</html>
