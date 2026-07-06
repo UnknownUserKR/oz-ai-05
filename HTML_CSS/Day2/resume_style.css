@@ -1,0 +1,24 @@
+header {
+    background-color: #19e94d;
+    padding: 10px;
+    text-align: center;
+}
+
+main {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+personal {
+    font-family: Times New Roman, serif;
+    font-size: 1rem;
+}
