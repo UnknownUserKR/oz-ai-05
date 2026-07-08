@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+        <!-- input event -->
+        <input type="text" id="name-input" placeholder="Type something..."></input>
+        <button>Click me!</button>
+
+        <script>
+            const input = document.getElementById('name-input');
+            // button 태그 선택
+            const button = document.querySelector('button');
+
+            function submitName() {
+                if (input.value === '') {
+                    alert('이름을 입력해주세요.');
+                    return;
+                }
+                const p = document.createElement('p');
+                
+                // input 태그 안에 입력된 이름을 p 태그에 넣어줌
+                // p.textContent = input.value;
+                // document.body.appendChild(p);
+
+                // input 태그 안에 입력된 이름을 콘솔에 출력
+                const welcomeText = `Welcome, ${input.value}!`;
+
+                p.textContent = welcomeText;
+                docuement.body.appendChild(p);
+            }
+
+            // button 클릭 이벤트 함수
+            function clickButton() {
+                alert('버튼이 클릭되었습니다.');
+            }
+
+            // button에 클릭 이벤트 리스너 추가
+            button.addEventListener('click', submitName);
+        </script>
+</body>
+
+</html>
