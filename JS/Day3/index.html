@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homework</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="top">
         <h2 id="title">실시간 암호화폐 가격 변동 추적기</h2>
         <div id="button">
-            <button>전체 보기</button>
-            <button>관심항목</button>
+            <button class="filter-btn active" data-filter="all">전체 보기</button>
+            <button class="filter-btn" data-filter="favorites">관심항목</button>
         </div>
-        <input placeholder="심볼 검색 (예: BTCUSDT)">
+        <input id="search" placeholder="심볼 검색 (예: BTCUSDT)">
     </div>
     <div class="table">
         <table>
@@ -26,14 +27,9 @@
                     <th>최저가</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody class="content">
                 <tr>
-                    <th>관심</th>
-                    <th>심볼</th>
-                    <th>현재가</th>
-                    <th>24시간 변동률</th>
-                    <th>최고가</th>
-                    <th>최저가</th>
+                    <th></th>
                 </tr>
             </tbody>
         </table>
